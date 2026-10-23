@@ -22,7 +22,7 @@ def read_file(path: Path) -> str:
 
 
 def split_text(text: str, chunk_size: int, overlap: int) -> list[str]:
-    """Собирает абзацы в чанки не длиннее chunk_size символов.
+    """Собирает абзацы в чанки не длиннее chunk_size символов .
 
     Слишком длинные абзацы режутся скользящим окном с перекрытием overlap,
     чтобы мысль на границе двух чанков не терялась.
