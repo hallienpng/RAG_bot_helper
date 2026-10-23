@@ -1,0 +1,41 @@
+
+# Виртуальные окружения
+.venv/
+venv/
+env/
+
+# Python: кэш и временные файлы
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Файлы и настройки IDE
+.vscode/
+.idea/
+
+# Переменные окружения и секреты
+.env
+.env.*
+!.env.example
+
+# Системные файлы macOS
+.DS_Store
+
+# Логи
+*.log
+
+# Временные результаты сборки
+build/
+dist/
+*.egg-info/
+
+# Большие данные — если не нужно хранить их в Git
+data/
+datasets/
+
+# Результаты вычислений — при необходимости
+outputs/
+results/
