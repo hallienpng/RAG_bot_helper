@@ -23,7 +23,7 @@ class SearchResult:
 class TfidfRetriever:
     def __init__(self, chunks: list[Chunk]):
         if not chunks:
-            raise ValueError("База знаний пуста: добавьте файлы .txt/.md/.pdf в папку knowledge_base")
+            raise ValueError("База знаний пуста: добавьте файлы .txt/.md/.pdf в папку knowledge_base.")
         self.chunks = chunks
         self.vectorizer = TfidfVectorizer(analyzer="char_wb", ngram_range=(2, 5), lowercase=True)
         self.matrix = self.vectorizer.fit_transform(c.text for c in chunks)
