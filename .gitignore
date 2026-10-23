@@ -45,3 +45,19 @@ datasets/
 # Результаты вычислений — при необходимости
 outputs/
 results/
+
+# Кеш Python
+__pycache__/
+*.py[cod]
+
+# Виртуальные окружения
+.venv/
+venv/
+
+# Кеш тестов
+.pytest_cache/
+
+# Локальные переменные окружения
+.env
+.env.*
+!.env.example
