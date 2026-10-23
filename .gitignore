@@ -24,6 +24,12 @@ __pycache__/
 # Системные файлы macOS
 .DS_Store
 
+# Кэш тестов
+.pytest_cache/
+
+# Локальные настройки Claude Code (общие .claude/skills и .mcp.json коммитим)
+.claude/settings.local.json
+
 # Логи
 *.log
 
