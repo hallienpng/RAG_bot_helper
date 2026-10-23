@@ -18,7 +18,7 @@ class RAGPipeline:
         self.reload()
 
     def reload(self) -> int:
-        """Перечитывает базу знаний. Возвращает количество проиндексированных чанков."""
+        """Перечитывает базу знаний. Возвращает количество проиндексированных чанков. """
         chunks = load_chunks(self.settings.knowledge_dir, self.settings.chunk_size, self.settings.chunk_overlap)
         self.retriever = TfidfRetriever(chunks)
         return len(chunks)
